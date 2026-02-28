@@ -1,0 +1,77 @@
+skills:
+  - title: "Frameworks/Tools"
+    items: "Kubernetes, Docker, Serverless, Terraform, IntelliJ, AWS, GCP"
+
+  - title: "Languages/SDKs"
+    items: "Go | Docker | Containers | Helm | CI/CD | Python | Java | C++ | NodeJS | C# | SQL | Qt"
+
+  - title: "Competencies"
+    items: "Site Reliability, DevOps, Security, Distributed Systems, English, French – All professional proficiency or above"
+
+experience:
+  - title: "Senior DevOps Engineer"
+    company: "PSL Group Inc."
+    period: "March 2023 - Present"
+    achievements:
+      - text: "Led the design, migration of CI/CD pipelines from AWS CodePipeline to Github Actions."
+        tech: "Kubernetes, Helm, Docker, Python, Go"
+      - text: "Optimized EC2 workloads to AWS EKS using multi-stage docker builds improving node efficiency and reducing node cost."
+        tech: "Kubernetes, Docker"
+      - text: "Designed and worked directly with the security team ensuring correct Kubernetes security requirements for all deployed Kubernetes clusters."
+        tech: "Kubernetes, Security, Github Actions, ArgoCD"
+      - text: "Reduced DevOps and InfraOps toil by 15 hours per month by designing and using a centralised IaC git repository backed by Dependabot for terraform module updates."
+        tech: "Kubernetes, NodeJS"
+      - text: "Provided developers with an intuitive way to deploy their microservices to our Kubernetes clusters using ArgoCD."
+        tech: "Kubernetes, Containers"
+      - text: "Automated deployment and increased developer productivity by 45%."
+        tech: "CI/CD, Github, Bash, Go, Kubernetes"
+
+  - title: "SRE Developer"
+    company: "Stingray Inc."
+    period: "September 2021 - March 2023"
+    achievements:
+      - text: "Leveraged Go, Python and NodeJS to create tools and microservices enhancing developers productivity"
+        tech: "Go, NodeJS"
+      - text: "Designed and deployed Kubernetes workloads using Helm, and IaC best practices"
+        tech: "Kubernetes, Helm"
+      - text: "Migrated production databases using AWS DMS, improving data reliability and reducing manual ops"
+        tech: "AWS, DMS"
+      - text: "Delivered infrastructure changes using Terraform modules and Concourse Pipelines"
+        tech: "Terraform, GitOps"
+      - text: "Participated in on-call rotation supporting production microservices and platform stability"
+        tech: "AWS, Kubernetes"
+
+  - title: "Software Developer"
+    company: "Stingray Inc."
+    period: "April 2019 - August 2021"
+    achievements:
+      - text: "Developed and design new microservices such as Karaoke-API in a distributed approach in a multitude of programming languages using Java, NodeJS, .Net Core"
+        tech: "Java, NodeJS, .Net Core"
+      - text: "Started using Amazon AWS and Google Cloud GCP as a developer"
+        tech: "AWS, GCP"
+      - text: "Learned and started using Kubernetes as a developer with Helm charts"
+        tech: "Kubernetes, Go, Helm"
+
+  - title: "Software Developer"
+    company: "Kinova Robotics Inc."
+    period: "June 2017 - April 2019"
+    achievements:
+      - text: "Developed features in C++ and Python for real-time, multi-threaded robotic software"
+        tech: "C++, Python"
+      - text: "Integrated CI/CD pipelines using Bamboo and contributed to DevOps automation using CMake and cross-compilation techniques"
+        tech: "CI/CD, CMake, Cross-Compilation"
+      - text: "Built Qt-based applications for internal tools and prototypes for upcoming product initiatives"
+        tech: "C++, Qt"
+
+education:
+  - degree: "B.Eng., Software Engineering"
+    school: "École de technologie supérieure"
+    location: "Montréal, Canada"
+    period: "2012 - Winter 2015"
+
+projects:
+  - title: "Add Github Ingress-Nginx CORS Wildcard feature and understand Go library interoperability with Kubernetes"
+    year: "2022"
+
+  - title: "Configure and maintain a multi-node Kubernetes cluster while maintaining the network firewall and switches (Ubiquiti)"
+    year: "2020 - Present"

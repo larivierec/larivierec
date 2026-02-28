@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Params.name }} - {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+    <div class="container">
+        <nav class="language-switcher">
+            {{ if eq .Site.Language.Lang "en" }}
+                {{ if .IsHome }}
+                    <a href="/fr">Français</a>
+                {{ else }}
+                    <a href="/fr{{ .RelPermalink }}">Français</a>
+                {{ end }}
+            {{ else }}
+                {{ if .IsHome }}
+                    <a href="/">English</a>
+                {{ else }}
+                    <a href="{{ strings.TrimPrefix "/fr" .RelPermalink }}">English</a>
+                {{ end }}
+            {{ end }}
+        </nav>
+        
+        {{ if .IsHome }}
+        <header class="landing-header">
+            <h1>{{ .Site.Params.name }}</h1>
+            <p class="tagline">{{ .Site.Params.tagline }}</p>
+        </header>
+        {{ else }}
+        <header class="resume-header">
+            <h1>{{ .Site.Params.name }}</h1>
+            <p class="tagline">{{ .Site.Params.tagline }}</p>
+            <p class="location">{{ .Site.Params.location }}</p>
+            
+            <div class="contact-links">
+                <a href="mailto:{{ .Site.Language.Params.email }}" class="contact-link">{{ if eq .Site.Language.Lang "fr" }}Courriel{{ else }}Email{{ end }}</a>
+                <a href="{{ .Site.Language.Params.linkedin }}" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="{{ .Site.Language.Params.github }}" target="_blank" class="contact-link">GitHub</a>
+            </div>
+        </header>
+        {{ end }}
+        
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+    </div>
+</body>
+</html>

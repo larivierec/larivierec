@@ -1,0 +1,77 @@
+skills:
+  - title: "Cadriciels/Outils"
+    items: "Kubernetes, Docker, Serverless, Terraform, IntelliJ, AWS, GCP"
+
+  - title: "Langages/SDKs"
+    items: "Go | Docker | Containers | Helm | CI/CD | Python | Java | C++ | NodeJS | C# | SQL | Qt"
+
+  - title: "Compétences"
+    items: "Fiabilité des sites, DevOps, Sécurité, Systèmes distribués, Anglais, Français – Tous niveaux professionnels ou supérieurs"
+
+experience:
+  - title: "DevOps Sénior"
+    company: "PSL Group Inc."
+    period: "Mars 2023 - Présent"
+    achievements:
+      - text: "Dirigé la conception et la migration des pipelines CI/CD d'AWS CodePipeline vers Github Actions."
+        tech: "Kubernetes, Helm, Docker, Python, Go"
+      - text: "Optimisé les charges de travail EC2 vers AWS EKS en utilisant des compilations docker multi-étapes, améliorant l'efficacité des nœuds et réduisant les coûts."
+        tech: "Kubernetes, Docker"
+      - text: "Conçu et travaillé directement avec l'équipe de sécurité pour assurer les exigences de sécurité Kubernetes correctes pour tous les clusters déployés."
+        tech: "Kubernetes, Security, Github Actions, ArgoCD"
+      - text: "Réduit le travail manuel DevOps et InfraOps de 15 heures par mois en concevant et utilisant un dépôt git IaC centralisé soutenu par Dependabot pour les mises à jour des modules terraform."
+        tech: "Kubernetes, NodeJS"
+      - text: "Fourni aux développeurs une méthode intuitive pour déployer leurs microservices vers nos clusters Kubernetes en utilisant ArgoCD."
+        tech: "Kubernetes, Containers"
+      - text: "Automatisé le déploiement et augmenté la productivité des développeurs de 45%."
+        tech: "CI/CD, Github, Bash, Go, Kubernetes"
+
+  - title: "Développeur SRE"
+    company: "Stingray Inc."
+    period: "Septembre 2021 - Mars 2023"
+    achievements:
+      - text: "Utilisé Go, Python et NodeJS pour créer des outils et microservices améliorant la productivité des développeurs"
+        tech: "Go, NodeJS"
+      - text: "Conçu et déployé des charges de travail Kubernetes en utilisant Helm et les meilleures pratiques IaC"
+        tech: "Kubernetes, Helm"
+      - text: "Migré des bases de données de production en utilisant AWS DMS, améliorant la fiabilité des données et réduisant les opérations manuelles"
+        tech: "AWS, DMS"
+      - text: "Livré des changements d'infrastructure en utilisant des modules Terraform et des pipelines Concourse"
+        tech: "Terraform, GitOps"
+      - text: "Participé à la rotation d'astreinte en supportant les microservices de production et la stabilité de la plateforme"
+        tech: "AWS, Kubernetes"
+
+  - title: "Développeur Logiciel"
+    company: "Stingray Inc."
+    period: "Avril 2019 - Août 2021"
+    achievements:
+      - text: "Développé et conçu de nouveaux microservices tels que Karaoke-API dans une approche distribuée en utilisant plusieurs langages de programmation: Java, NodeJS, .Net Core"
+        tech: "Java, NodeJS, .Net Core"
+      - text: "Commencé à utiliser Amazon AWS et Google Cloud GCP en tant que développeur"
+        tech: "AWS, GCP"
+      - text: "Appris et commencé à utiliser Kubernetes en tant que développeur avec des chartes Helm"
+        tech: "Kubernetes, Go, Helm"
+
+  - title: "Développeur Logiciel"
+    company: "Kinova Robotics Inc."
+    period: "Juin 2017 - Avril 2019"
+    achievements:
+      - text: "Développé des fonctionnalités en C++ et Python pour des logiciels robotiques en temps réel et multi-thread"
+        tech: "C++, Python"
+      - text: "Intégré des pipelines CI/CD en utilisant Bamboo et contribué à l'automatisation DevOps en utilisant CMake et des techniques de compilation croisée"
+        tech: "CI/CD, CMake, Cross-Compilation"
+      - text: "Construit des applications basées sur Qt pour des outils internes et des prototypes pour les initiatives de produits à venir"
+        tech: "C++, Qt"
+
+education:
+  - degree: "B.Ing., Génie Logiciel"
+    school: "École de technologie supérieure"
+    location: "Montréal, Canada"
+    period: "2012 - Hiver 2015"
+
+projects:
+  - title: "Ajout de la fonctionnalité CORS Wildcard Github Ingress-Nginx et compréhension de l'interopérabilité des bibliothèques Go avec Kubernetes"
+    year: "2022"
+
+  - title: "Configuration et maintenance d'un cluster Kubernetes multi-nœuds tout en maintenant le pare-feu réseau et les commutateurs (Ubiquiti)"
+    year: "2020 - Présent"

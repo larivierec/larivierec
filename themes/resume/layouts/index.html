@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="landing-links">
+    {{ with .Site.Language.Params.email }}
+    <a href="mailto:{{ . }}" class="link-button email-button">
+        <span class="icon">@</span> {{ if eq $.Site.Language.Lang "fr" }}Courriel{{ else }}Email{{ end }}
+    </a>
+    {{ end }}
+    
+    {{ with .Site.Language.Params.linkedin }}
+    <a href="{{ . }}" target="_blank" class="link-button linkedin-button">
+        <span class="icon">in</span> LinkedIn
+    </a>
+    {{ end }}
+    
+    {{ if eq .Site.Language.Lang "fr" }}
+    <a href="/fr/resume" class="link-button resume-button">
+        <span class="icon">{ }</span> CV
+    </a>
+    {{ else }}
+    <a href="/resume" class="link-button resume-button">
+        <span class="icon">{ }</span> Resume
+    </a>
+    {{ end }}
+    
+    {{ with .Site.Language.Params.homelab }}
+    <a href="{{ . }}" target="_blank" class="link-button homelab-button">
+        <span class="icon">⌂</span> Homelab
+    </a>
+    {{ end }}
+</section>
+
+<footer class="landing-footer">
+    <p>&copy; {{ now.Year }} {{ if eq .Site.Language.Lang "fr" }}Propulsé par{{ else }}Powered by{{ end }} Hugo</p>
+</footer>
+{{ end }}
+

@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ $resume := index .Site.Data (printf "resume_%s" .Site.Language.Lang) }}
+
+<!-- Skills Section -->
+<section class="resume-section">
+    <h2>{{ if eq .Site.Language.Lang "fr" }}Compétences{{ else }}Skills{{ end }}</h2>
+    {{ range $resume.skills }}
+    <div class="skill-category">
+        <h3>{{ .title }}</h3>
+        <p>{{ .items }}</p>
+    </div>
+    {{ end }}
+</section>
+
+<!-- Experience Section -->
+<section class="resume-section">
+    <h2>{{ if eq .Site.Language.Lang "fr" }}Expérience{{ else }}Experience{{ end }}</h2>
+    {{ range $resume.experience }}
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="experience-title">
+                <h3>{{ .title }}</h3>
+                <p class="company">{{ .company }}</p>
+            </div>
+            <p class="period">{{ .period }}</p>
+        </div>
+        <ul class="achievements">
+            {{ range .achievements }}
+            <li>
+                {{ .text }}
+                {{ if .tech }}
+                <span class="tech-stack">{{ .tech }}</span>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</section>
+
+<!-- Education Section -->
+<section class="resume-section">
+    <h2>{{ if eq .Site.Language.Lang "fr" }}Formation{{ else }}Education{{ end }}</h2>
+    {{ range $resume.education }}
+    <div class="education-item">
+        <div class="education-header">
+            <div>
+                <h3>{{ .degree }}</h3>
+                <p class="school">{{ .school }}</p>
+                <p class="location">{{ .location }}</p>
+            </div>
+            <p class="period">{{ .period }}</p>
+        </div>
+    </div>
+    {{ end }}
+</section>
+
+<!-- Projects Section -->
+{{ if $resume.projects }}
+<section class="resume-section">
+    <h2>{{ if eq .Site.Language.Lang "fr" }}Projets{{ else }}Projects{{ end }}</h2>
+    {{ range $resume.projects }}
+    <div class="project-item">
+        <p class="project-title">{{ .title }}</p>
+        <p class="project-year">{{ .year }}</p>
+    </div>
+    {{ end }}
+</section>
+{{ end }}
+
+<div class="back-to-home">
+    {{ if eq .Site.Language.Lang "en" }}
+        <a href="/" class="back-link">← Back to Home</a>
+    {{ else }}
+        <a href="/fr" class="back-link">← Retour à l'accueil</a>
+    {{ end }}
+</div>
+
+{{ end }}

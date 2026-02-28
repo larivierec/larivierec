@@ -1,0 +1,35 @@
+baseURL = "https://garb.dev/"
+title = "Christopher Larivière"
+languageCode = "en"
+defaultContentLanguage = "en"
+theme = "resume"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      linkedin = "https://linkedin.com/in/christopher-lariviere"
+      github = "https://github.com/larivierec"
+      email = "lariviere.c@gmail.com"
+      homelab = "https://github.com/larivierec/home-cluster"
+      tagline = "SRE | DevOps | Cloud Infrastructure"
+  
+  [languages.fr]
+    languageName = "Français"
+    weight = 2
+    [languages.fr.params]
+      linkedin = "https://linkedin.com/in/christopher-lariviere"
+      github = "https://github.com/larivierec"
+      email = "lariviere.c@gmail.com"
+      homelab = "https://github.com/larivierec/home-cluster"
+      tagline = "SRE | DevOps | Infrastructure Cloud"
+
+[params]
+  name = "Christopher Larivière"
+  location = "Montréal, Canada"
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
