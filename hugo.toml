@@ -2,12 +2,15 @@ baseURL = "https://garb.dev/"
 title = "Christopher Larivière"
 languageCode = "en"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 theme = "resume"
 
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
+    languageCode = "en"
+    contentDir = "content"
     [languages.en.params]
       linkedin = "https://linkedin.com/in/christopher-lariviere"
       github = "https://github.com/larivierec"
